@@ -273,22 +273,6 @@ void Game::update(float dt)
     in_menu = 2;
   }
 
-  //  if (jump_counter < 60)
-  //  {
-  //    if (jump == true)
-  //    {
-  //      gravity = 0;
-  //      player.getSprite()->move(0, -2.5);
-  //      jump_counter ++;
-  //    }
-  //    else
-  //    {
-  //      gravity = 200;
-  //      jump_counter = 0;
-  //    }
-  //
-  //  }
-
   // stops player from going off-screen
   if (
     player.getSprite()->getPosition().x >=
@@ -374,10 +358,7 @@ void Game::render()
 }
 
 void Game::mouseClicked(sf::Event event)
-{
-  // get the click position
-  //  sf::Vectoplatformi click = sf::Mouse::getPosition(window);
-}
+{}
 
 void Game::keyPressed(sf::Event event)
 {
